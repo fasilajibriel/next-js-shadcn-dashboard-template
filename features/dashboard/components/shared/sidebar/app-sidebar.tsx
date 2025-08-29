@@ -38,7 +38,7 @@ import * as React from "react";
 import { NavMain } from "./components/nav-main";
 import { NavProjects } from "./components/nav-projects";
 import { NavUser } from "./components/nav-user";
-import { TeamSwitcher } from "./components/team-switcher";
+// import { TeamSwitcher } from "./components/team-switcher";
 
 import {
   Sidebar,
@@ -83,7 +83,7 @@ const data = {
       icon: SquareTerminal,
       isActive: true,
       items: [
-        { title: "History", url: "#" },
+        { title: "History", url: "/dashboard/departments" },
         { title: "Starred", url: "#" },
         { title: "Settings", url: "#" },
       ],
@@ -122,9 +122,9 @@ const data = {
     },
   ],
   projects: [
-    { name: "Design Engineering", url: "#", icon: Frame },
-    { name: "Sales & Marketing", url: "#", icon: PieChart },
-    { name: "Travel", url: "#", icon: Map },
+    { name: "Learn", url: "/dashboard/learn", icon: Frame },
+    { name: "Submissions", url: "/dashboard/submissions", icon: PieChart },
+    { name: "profile", url: "/dashboard/profile", icon: Map },
   ],
 };
 
